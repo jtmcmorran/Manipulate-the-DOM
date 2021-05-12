@@ -43,11 +43,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   pastRaces.appendChild(li);
 
   // Part 7
-
+  let blogPost = document.createElement('div');
+  blogPost.className = "blog-post";
+  let h2 = document.createElement('h2');
+  let postHead = document.createTextNode('Ottawa');
+  let p = document.createElement('p');
+  let postText = document.createTextNode('The Mounties never stood a chance.');
+  h2.appendChild(postHead);
+  p.appendChild(postText);
+  blogPost.appendChild(h2);
+  blogPost.appendChild(p);
+  let blog = document.querySelector(".main");
+  let secondPost = document.querySelector(".blog-post purple");
+  blog.insertBefore(blogPost,secondPost);
 
   // Part 8
-
-
+  let quoteBtn = document.querySelector('#quote-title');
+  quoteBtn.addEventListener('click',randomQuote);
   // Part 9
 
 
