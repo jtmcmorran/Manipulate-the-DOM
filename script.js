@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   // Part 5
-
+  let pastRaces = document.getElementById('past-races');
+  pastRaces.removeChild(pastRaces.children[3]);
 
   // Part 6
-
 
   // Part 7
 
