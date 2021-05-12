@@ -23,10 +23,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.body.style.backgroundColor = "#a3a3c2";
 
   // Part 3
-  
+  let fav = document.getElementById('favorite-things');
+  fav.removeChild(fav.lastElementChild);
 
   // Part 4
-
+  let specialTitle = document.getElementsByClassName("special-title");
+  for(i = 0; i < specialTitle.length; i++){
+    specialTitle[i].style.fontSize = '2rem';
+  }
 
   // Part 5
 
