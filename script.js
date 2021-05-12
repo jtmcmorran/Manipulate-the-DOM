@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
   };
   randomQuote();
-  
-  // Do all of your work inside the document.addEventListener  
+
+  // Do all of your work inside the document.addEventListener
 
   // Part 1
-
+  document.querySelector('#main-title').textContent = "Ride or Die."
 
   // Part 2
 
