@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   pastRaces.removeChild(pastRaces.children[3]);
 
   // Part 6
+  let li = document.createElement('li');
+  let city = document.createTextNode("Ottawa");
+  li.appendChild(city);
+  pastRaces.appendChild(li);
 
   // Part 7
 
