@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener
 
   // Part 1
-  document.querySelector('#main-title').textContent = "Ride or Die."
+  document.querySelector('#main-title').textContent = "Ride or Die.";
 
   // Part 2
-
+  document.body.style.backgroundColor = "#a3a3c2";
 
   // Part 3
-
+  
 
   // Part 4
 
