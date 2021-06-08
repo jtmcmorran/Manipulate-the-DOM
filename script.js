@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let blogPost = document.createElement('div');
   blogPost.className = "blog-post purple";
   let h2 = document.createElement('h2');
-  h2.style.color = "white"  
+  h2.style.color = "white"
   let postHead = document.createTextNode('Ottawa');
   let p = document.createElement('p');
   let postText = document.createTextNode('The Mounties never stood a chance.');
@@ -62,8 +62,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let quoteBtn = document.querySelector('#quote-title');
   quoteBtn.addEventListener('click',randomQuote);
   // Part 9
+  let blogPosts = document.querySelectorAll(".blog-post");
 
 
-
-
-});
+  blogPosts.forEach( e => {
+    e.addEventListener('mouseout', function(){this.classList.toggle("purple")})
+    e.addEventListener('mouseenter', function(){this.classList.toggle("red")})
+  });
+})
